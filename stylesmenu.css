@@ -1,0 +1,208 @@
+body, h1, p, nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylizacja całego dokumentu */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0 20px;
+    text-align: center;
+
+    margin-top: 50px;
+    background-color: rgb(46, 46, 46);
+    color: rgb(211, 211, 211);
+}
+
+/* Stylizacja nagłówka */
+header {
+    background-color: #3f2796;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Stylizacja nawigacji */
+nav {
+    background-color: #3f2796;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #ddd;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3f2796;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #19065a;
+
+}
+/* Stylizacja stopki */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #3f2796;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#text {
+    font-size: 2rem; /* Duża czcionka */
+    font-family: 'Georgia', serif;
+    margin: 0.5rem; /* Odstępy między słowami */
+    margin-bottom: 20px;
+    display: inline-block;
+    white-space: pre-wrap; /* Utrzymuje formatowanie spacji i nowych linii */
+}
+#input {
+    font-size: 24px;
+    padding: 10px;
+    width: 300px;
+    opacity: 0;
+}
+
+#message {
+    color: red;
+    font-size: 20px;
+}
+.form {
+    background-color: #3f2796;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #19065a;
+}
+
+.login-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #220f69;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #220f69;
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+#forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+#square {
+    width: 50%;
+    height: 75%;
+    padding: 20px;
+    border-radius: 8px;
+    border-color: black;
+    margin: 0 auto;
+    background-color: #3f2796;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    top: -700px;
+    left: 50%; 
+    transform: translateX(-50%);
+    transition: top 0.5s ease-in-out;
+    box-shadow: 0 0 30px #19065a;
+}
+#square p, #square h3 {
+    margin: 5px 0; 
+}
+
+#buttonRecord a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+#buttonRecord  a:hover {
+    background-color: #555;
+    color: #ddd;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    color: #ddd;
+}
+
+th {
+    background-color: #3f2796;
+    color: white;
+}
+
+
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100;
+}
