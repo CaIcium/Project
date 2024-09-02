@@ -49,13 +49,13 @@ $conn->close();
         <h1>Witaj <?= $_SESSION["Login"] ?>!</h1>
     </header>
     <nav>
+        <a href="menu.php">Menu</a>
         <a href="settings.php">Graj</a>
         <a href="record.php">Ranking</a>
-        <a href="myAccout.php">Moje konto</a>
+        <a href="myAccount.php">Moje wyniki</a>
         <?php if ($is_admin) : ?>
             <a href="admintable.php">Zgłoszenia</a>
         <?php endif; ?>
-        <a href="menu.php">Powrót do menu</a>
         <a href="logout.php">Wyloguj</a>
     </nav>
     <form method="post" action="">

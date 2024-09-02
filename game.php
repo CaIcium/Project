@@ -38,17 +38,18 @@ $conn->close();
 
 <body>
     <header>
-        <h1>Witaj <?= $_SESSION["Login"] ?>!</h1>
+        <h1>Nauka pisania</h1>
+        <p>Witaj <?= $_SESSION["Login"] ?>!</p>
     </header>
 
     <nav>
+        <a href="menu.php">Menu</a>
         <a href="settings.php">Graj</a>
         <a href="record.php">Ranking</a>
-        <a href="myAccout.php">Moje konto</a>
+        <a href="myAccount.php">Moje wyniki</a>
         <?php if ($is_admin) : ?>
             <a href="admintable.php">Zgłoszenia</a>
         <?php endif; ?>
-        <a href="menu.php">Powrót do menu</a>
         <a href="logout.php">Wyloguj</a>
     </nav>
     <h1 id="goodluck">Kliknij dowolny przycisk aby zacząć.</h1>
@@ -99,11 +100,11 @@ $conn->close();
     <footer>
         <p> Autor strony: Tomasz Janiuk</p>
         <form id="feedbackForm" method="post">
-        <input type="hidden" name="ID_uzytkownika" value="<?= $_SESSION["ID_uzytkownika"] ?>">
-        <input type="text" name="feedback" placeholder="Wpisz wiadomość do administratora">
-        <input type="submit" value="Wyślij">
-    </form>
-    <div id="feedbackMessage"></div>
+            <input type="hidden" name="ID_uzytkownika" value="<?= $_SESSION["ID_uzytkownika"] ?>">
+            <input type="text" name="feedback" placeholder="Wpisz wiadomość do administratora">
+            <input type="submit" value="Wyślij">
+        </form>
+        <div id="feedbackMessage"></div>
 </body>
 
 </html>

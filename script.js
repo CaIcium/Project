@@ -73,7 +73,6 @@ $(document).ready(function() {
         $accInput.val(acc + "%");
         $wpnInput.val(wpn);
     }
-
     async function startTimer(duration) {
         let countdown = duration;
         while (countdown >= 0) {
@@ -83,7 +82,6 @@ $(document).ready(function() {
         }
         endGame(countdown);
     }
-
     $inputElement.on('input', updateText);
     function startGame() {
         $textElement.html(formatText(targetText));

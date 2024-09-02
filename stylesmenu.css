@@ -198,11 +198,13 @@ th {
     background-color: #3f2796;
     color: white;
 }
-
-
-
 img {
     border-radius: 50%;
     width: 100px;
     height: 100;
+}
+#klawa{
+    border-radius: 0%;
+    width: 650px;
+    height: 400px;
 }

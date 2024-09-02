@@ -13,6 +13,7 @@ $result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,19 +22,21 @@ $result = $conn->query($sql);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="ajax.js"></script>
 </head>
+
 <body>
     <header>
-    <h1>Witaj <?= $_SESSION["Login"]?>!</h1>
+        <h1>Nauka pisania</h1>
+        <p>Witaj <?= $_SESSION["Login"] ?>!</p>
     </header>
     <nav>
+        <a href="menu.php">Menu</a>
         <a href="settings.php">Graj</a>
         <a href="record.php">Ranking</a>
-        <a href="myAccout.php">Moje konto</a>
+        <a href="myAccount.php">Moje wyniki</a>
         <?php if ($is_admin) : ?>
             <a href="admintable.php">Zgłoszenia</a>
         <?php endif; ?>
-        <a href="menu.php">Powrót do menu</a>    
-        <a href="logout.php">Wyloguj</a>      
+        <a href="logout.php">Wyloguj</a>
     </nav>
     <?php
     if ($result->num_rows > 0) {
@@ -53,15 +56,14 @@ $result = $conn->query($sql);
 
     $conn->close();
     ?>
-
-
     <footer>
         <p> Autor strony: Tomasz Janiuk</p>
         <form id="feedbackForm" method="post">
-        <input type="hidden" name="ID_uzytkownika" value="<?= $_SESSION["ID_uzytkownika"] ?>">
-        <input type="text" name="feedback" placeholder="Wpisz wiadomość do administratora">
-        <input type="submit" value="Wyślij">
-    </form>
-    <div id="feedbackMessage"></div>
+            <input type="hidden" name="ID_uzytkownika" value="<?= $_SESSION["ID_uzytkownika"] ?>">
+            <input type="text" name="feedback" placeholder="Wpisz wiadomość do administratora">
+            <input type="submit" value="Wyślij">
+        </form>
+        <div id="feedbackMessage"></div>
 </body>
+
 </html>
